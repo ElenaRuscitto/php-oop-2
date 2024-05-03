@@ -1,23 +1,24 @@
 <?php
 
-require_once __DIR__ . '/Subject.php';
+
 
 class Product {
 
   protected $id;
-  public $name;
+  public $image;
+  public $title;
   public $price;
-  
-  public $subject;
 
 
-  function __construct(int $_id, string $_name, int $_price, Subject $_subject){
+
+
+  function __construct(int $_id, string $_image, string $_title, float $_price){
 
     $this-> id = $_id;
-    $this-> name = $_name;
+    $this-> image = $_image;
+    $this-> title = $_title;
     $this-> price = $_price;
 
-    $this-> subject = $_subject;
   }
 
 
@@ -26,6 +27,3 @@ class Product {
 
 ?>
 
-// public function getFullStart() {
-  //   return $this->id, $this->name, $this->subject, $this->price;
-  // }

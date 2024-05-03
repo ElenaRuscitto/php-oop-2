@@ -1,3 +1,14 @@
+<?php
+require_once __DIR__ . '/Model/Category.php';
+require_once __DIR__ . '/Model/Product.php';
+require_once __DIR__ . '/Model/Subject.php';
+require_once __DIR__ . '/db.php';
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,5 +23,8 @@
 </head>
 <body>
   
+
+
+
 </body>
 </html>
