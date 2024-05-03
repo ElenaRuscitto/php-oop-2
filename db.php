@@ -10,7 +10,7 @@ $db = [
   new Category(5, 'https://m.media-amazon.com/images/I/61ZxNEz9uDL.__AC_SX300_SY300_QL70_ML2_.jpg', 'cibo', 13.99, new Subject('cat'), 'bocconcini', 'Royal Canin'),
   new Category(6, 'https://m.media-amazon.com/images/I/71c8C+ByICL._AC_SY300_SX300_.jpg', 'cuccia', 55.99, new Subject('cat'), 'Cuccia a igloo ', 'Green Home'),
 
-  new Category(7, 'https://m.media-amazon.com/images/I/71HicmVRM8L.__AC_SX300_SY300_QL70_ML2_.jpg', 'cuccia', 45.99, new Subject('dog'), 'Letto a Ciambella Antistress e Morbida per Dormire ', 'Green Home'),
+  new Category(7, 'https://m.media-amazon.com/images/I/51zrCKrxMNL.__AC_SX300_SY300_QL70_ML2_.jpg', 'cuccia', 45.99, new Subject(''), 'Letto a Ciambella Antistress e Morbida per Dormire ', 'Green Home'),
 
   new Category(8, 'https://m.media-amazon.com/images/I/71JIyEl-WEL.__AC_SX300_SY300_QL70_ML2_.jpg', 'gioco', 7.99, new Subject('cat'), 'Bacchetta con Piume e Campanellino', 'AIDIYA'),
 

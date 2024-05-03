@@ -30,7 +30,7 @@ require_once __DIR__ . '/db.php';
 <body>
   
 <div class="container">
-  <h1 class="text-center">Aquista Online</h1>
+  <h1 class="text-center my-4">Aquista Online</h1>
   <div class="row">
   <?php foreach($db as $product): ?>
     <div class="col">
