@@ -17,11 +17,11 @@ class Subject {
 
   public function setIcon($_type){
     if($_type == 'dog') {
-      $this-> icon = '<i class="fa-solid fa-dog"></i>';
-    } elseif($_type == 'gatto') {
-      $this-> icon =  '<i class="fa-solid fa-cat"></i>';
+       return '<i class="fa-solid fa-dog"></i>';
+    } elseif($_type == 'cat') {
+       return  '<i class="fa-solid fa-cat"></i>';
     } else {
-      $this-> icon =  '<i class="fa-solid fa-question"></i>';
+       return  '<i class="fa-solid fa-question"></i>';
     }
   } 
 
