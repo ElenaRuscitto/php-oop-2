@@ -2,7 +2,7 @@
 
 
 
-class Category extends Product{
+class Accessory extends Product{
 
   public $nameCategory;
   public $brand;
