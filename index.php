@@ -7,13 +7,12 @@ require_once __DIR__ . '/Model/Accessory.php';
 require_once __DIR__ . '/Model/Subject.php';
 require_once __DIR__ . '/db.php';
 
-
 // filtro l'array generale dei prodotti in base alla classe separando quindi cibo, giochi, accessori.
-// $foods = array_filter($products, fn ($product) => get_class($product) === 'cibo');
+// $foods = array_filter($products, fn ($product) => get_class($product) === 'Food');
 
-// $toys = array_filter($products, fn ($product) => get_class($product) === 'gioco');
+// $toys = array_filter($products, fn ($product) => get_class($product) === 'Toy');
 
-// $accessories = array_filter($products, fn ($product) => get_class($product) === 'cuccia');
+// $accessories = array_filter($products, fn ($product) => get_class($product) === 'Accessory');
 
 // var_dump($db)
 ?>
@@ -41,7 +40,7 @@ require_once __DIR__ . '/db.php';
 <div class="container">
   <h1 class="text-center my-4">Aquista Online</h1>
   <div class="row">
-    <h1>Cibo</h1>
+    <!-- <h3>Cibo</h3> -->
       <?php foreach($db as $product): ?>
         <div class="col">
 
@@ -66,7 +65,7 @@ require_once __DIR__ . '/db.php';
         </div>
       <?php endforeach; ?>
 
-      <h1>Giochi</h1>
+      <!-- <h3>Giochi</h3>
       <?php foreach($db as $product): ?>
         <div class="col">
 
@@ -83,15 +82,15 @@ require_once __DIR__ . '/db.php';
                 <p class="card-text"> <?php echo $product->subject->icon  ?></p>
                 <p class="card-text">Tipologia prodotto: <?php echo $product->title ?></p>
                 <p class="card-text">Prezzo: &euro; <?php echo $product->price ?></p>
-                <p class="card-text">Descrizione: &euro; <?php echo $product->price ?></p>
+                <p class="card-text">Descrizione: <?php echo $product->material ?? $product->ingredient ?? $product->funzionalita?></p>
                 <a href="#" class="btn btn-primary">Acquista</a>
               </div>
           </div>
 
         </div>
-      <?php endforeach; ?>
+      <?php endforeach; ?> -->
 
-      <h1>Accessori</h1>
+      <!-- <h3>Accessori</h3>
       <?php foreach($db as $product): ?>
         <div class="col">
 
@@ -99,22 +98,22 @@ require_once __DIR__ . '/db.php';
             <img src="<?php echo $product->image ?>" class="card-imgss-top my-img" alt="...">
               <div class="card-body">
                 <h5 class="card-title">
-                  <?php echo $product->getCommon() ?>
+                  <?php echo $product->nameCategory ?>
                 
                 </h5>
-                <!-- <h6 class="card-subtitle mb-2 text-body-secondary">
+                <h6 class="card-subtitle mb-2 text-body-secondary">
                   <?php echo $product->brand ?>
-                </h6> -->
+                </h6>
                 <p class="card-text"> <?php echo $product->subject->icon  ?></p>
                 <p class="card-text">Tipologia prodotto: <?php echo $product->title ?></p>
                 <p class="card-text">Prezzo: &euro; <?php echo $product->price ?></p>
-                <p class="card-text">Descrizione: &euro; <?php echo $product->price ?></p>
+                <p class="card-text">Descrizione: <?php echo $product->material ?? $product->ingredient ?? $product->funzionalita?></p>
                 <a href="#" class="btn btn-primary">Acquista</a>
               </div>
           </div>
 
         </div>
-      <?php endforeach; ?>
+      <?php endforeach; ?> -->
   </div>
 </div>
 
