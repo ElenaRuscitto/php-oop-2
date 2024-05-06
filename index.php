@@ -8,6 +8,13 @@ require_once __DIR__ . '/Model/Subject.php';
 require_once __DIR__ . '/db.php';
 
 
+// filtro l'array generale dei prodotti in base alla classe separando quindi cibo, giochi, accessori.
+// $foods = array_filter($products, fn ($product) => get_class($product) === 'cibo');
+
+// $toys = array_filter($products, fn ($product) => get_class($product) === 'gioco');
+
+// $accessories = array_filter($products, fn ($product) => get_class($product) === 'cuccia');
+
 // var_dump($db)
 ?>
 
@@ -42,7 +49,7 @@ require_once __DIR__ . '/db.php';
             <img src="<?php echo $product->image ?>" class="card-imgss-top my-img" alt="...">
               <div class="card-body">
                 <h5 class="card-title">
-                  <?php echo $product->getCommon() ?>
+                  <?php echo $product->nameCategory ?>
                 
                 </h5>
                 <h6 class="card-subtitle mb-2 text-body-secondary">
@@ -51,13 +58,13 @@ require_once __DIR__ . '/db.php';
                 <p class="card-text"> <?php echo $product->subject->icon  ?></p>
                 <p class="card-text">Tipologia prodotto: <?php echo $product->title ?></p>
                 <p class="card-text">Prezzo: &euro; <?php echo $product->price ?></p>
-                <p class="card-text">Descrizione: &euro; <?php echo $product->price ?></p>
+                <p class="card-text">Descrizione: <?php echo $product->material ?? $product->ingredient ?? $product->funzionalita?></p>
                 <a href="#" class="btn btn-primary">Acquista</a>
               </div>
           </div>
 
         </div>
-      <?php endforeach ?>
+      <?php endforeach; ?>
 
       <h1>Giochi</h1>
       <?php foreach($db as $product): ?>
@@ -82,7 +89,7 @@ require_once __DIR__ . '/db.php';
           </div>
 
         </div>
-      <?php endforeach ?>
+      <?php endforeach; ?>
 
       <h1>Accessori</h1>
       <?php foreach($db as $product): ?>
@@ -107,7 +114,7 @@ require_once __DIR__ . '/db.php';
           </div>
 
         </div>
-      <?php endforeach ?>
+      <?php endforeach; ?>
   </div>
 </div>
 

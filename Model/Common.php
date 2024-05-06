@@ -9,6 +9,8 @@ trait Common {
   public function getCommon(){
     return "$this->nameCategory, $this->brand";
   }
+
+  
 }
 
 
