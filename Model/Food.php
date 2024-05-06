@@ -1,21 +1,23 @@
 <?php
-
+require_once __DIR__ . '/Common.php';
 
 
 class Food extends Product{
 
-  public $nameCategory;
-  public $brand;
+  use Common;
+  
+  public $ingredient;
+
 
   public $subject;
 
 
-  public function __construct(int $_id, string $_image, string $_title, float $_price, Subject $_subject, string $_nameCategory, string $_brand){
+  public function __construct(int $_id, string $_image, string $_title, float $_price, Subject $_subject, string $_ingredient){
 
     parent::__construct($_id, $_image, $_title, $_price);
 
-      $this-> nameCategory = $_nameCategory;
-      $this-> brand = $_brand;
+      $this-> ingredient = $_ingredient;
+
       
       $this-> subject = $_subject;
 
@@ -23,6 +25,8 @@ class Food extends Product{
 
 
 }
+
+
 
 
 ?>

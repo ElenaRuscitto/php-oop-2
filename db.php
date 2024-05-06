@@ -8,7 +8,7 @@ $db = [
   new Food(3, 'https://m.media-amazon.com/images/I/81wkkryRXgL.__AC_SX300_SY300_QL70_ML2_.jpg', 'cibo', 15.00, new Subject('dog'), 'croccantini', 'Purina'),
   new Food(4, 'https://m.media-amazon.com/images/I/71VlybfHBEL.__AC_SX300_SY300_QL70_ML2_.jpg', 'cibo', 14.99, new Subject('dog'), 'bocconcini', 'Almo Nature'),
   new Food(5, 'https://m.media-amazon.com/images/I/61ZxNEz9uDL.__AC_SX300_SY300_QL70_ML2_.jpg', 'cibo', 13.99, new Subject('cat'), 'bocconcini', 'Royal Canin'),
-  new Accessory(6, 'https://m.media-amazon.com/images/I/71c8C+ByICL._AC_SY300_SX300_.jpg', 'cuccia', 55.99, new Subject('cat'), 'Cuccia a igloo ', 'Green Home'),
+  new Accessory(6, 'https://m.media-amazon.com/images/I/71c8C+ByICL._AC_SY300_SX300_.jpg', 'cuccia', 55.99, new Subject('cat'), 'plastica' ),
 
   new Accessory(7, 'https://m.media-amazon.com/images/I/51zrCKrxMNL.__AC_SX300_SY300_QL70_ML2_.jpg', 'cuccia', 45.99, new Subject(''), 'Letto a Ciambella Antistress e Morbida per Dormire ', 'Green Home'),
 
@@ -20,3 +20,5 @@ $db = [
 
 ?>
 
+<!-- 'croccantini', 'Royal Canin' -->
+<!-- 'Cuccia a igloo ', 'Green Home' -->

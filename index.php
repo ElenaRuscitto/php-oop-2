@@ -34,28 +34,80 @@ require_once __DIR__ . '/db.php';
 <div class="container">
   <h1 class="text-center my-4">Aquista Online</h1>
   <div class="row">
-  <?php foreach($db as $product): ?>
-    <div class="col">
+    <h1>Cibo</h1>
+      <?php foreach($db as $product): ?>
+        <div class="col">
 
-      <div class="card my-3 my-card" style="width: 18rem;">
-        <img src="<?php echo $product->image ?>" class="card-imgss-top my-img" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">
-              <?php echo $product->nameCategory ?>
-             
-            </h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">
-              <?php echo $product->brand ?>
-            </h6>
-            <p class="card-text"> <?php echo $product->subject->icon  ?></p>
-            <p class="card-text">Tipologia prodotto: <?php echo $product->title ?></p>
-            <p class="card-text">Prezzo: &euro; <?php echo $product->price ?></p>
-            <a href="#" class="btn btn-primary">Acquista</a>
+          <div class="card my-3 my-card" style="width: 18rem;">
+            <img src="<?php echo $product->image ?>" class="card-imgss-top my-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <?php echo $product->getCommon() ?>
+                
+                </h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  <?php echo $product->brand ?>
+                </h6>
+                <p class="card-text"> <?php echo $product->subject->icon  ?></p>
+                <p class="card-text">Tipologia prodotto: <?php echo $product->title ?></p>
+                <p class="card-text">Prezzo: &euro; <?php echo $product->price ?></p>
+                <p class="card-text">Descrizione: &euro; <?php echo $product->price ?></p>
+                <a href="#" class="btn btn-primary">Acquista</a>
+              </div>
           </div>
-      </div>
 
-    </div>
- <?php endforeach ?>
+        </div>
+      <?php endforeach ?>
+
+      <h1>Giochi</h1>
+      <?php foreach($db as $product): ?>
+        <div class="col">
+
+          <div class="card my-3 my-card" style="width: 18rem;">
+            <img src="<?php echo $product->image ?>" class="card-imgss-top my-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <?php echo $product->nameCategory ?>
+                
+                </h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  <?php echo $product->brand ?>
+                </h6>
+                <p class="card-text"> <?php echo $product->subject->icon  ?></p>
+                <p class="card-text">Tipologia prodotto: <?php echo $product->title ?></p>
+                <p class="card-text">Prezzo: &euro; <?php echo $product->price ?></p>
+                <p class="card-text">Descrizione: &euro; <?php echo $product->price ?></p>
+                <a href="#" class="btn btn-primary">Acquista</a>
+              </div>
+          </div>
+
+        </div>
+      <?php endforeach ?>
+
+      <h1>Accessori</h1>
+      <?php foreach($db as $product): ?>
+        <div class="col">
+
+          <div class="card my-3 my-card" style="width: 18rem;">
+            <img src="<?php echo $product->image ?>" class="card-imgss-top my-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <?php echo $product->getCommon() ?>
+                
+                </h5>
+                <!-- <h6 class="card-subtitle mb-2 text-body-secondary">
+                  <?php echo $product->brand ?>
+                </h6> -->
+                <p class="card-text"> <?php echo $product->subject->icon  ?></p>
+                <p class="card-text">Tipologia prodotto: <?php echo $product->title ?></p>
+                <p class="card-text">Prezzo: &euro; <?php echo $product->price ?></p>
+                <p class="card-text">Descrizione: &euro; <?php echo $product->price ?></p>
+                <a href="#" class="btn btn-primary">Acquista</a>
+              </div>
+          </div>
+
+        </div>
+      <?php endforeach ?>
   </div>
 </div>
 

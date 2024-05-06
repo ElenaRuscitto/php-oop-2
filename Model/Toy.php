@@ -1,9 +1,11 @@
 <?php
-
+require_once __DIR__ . '/Common.php';
 
 
 class Toy extends Product{
 
+  use Common;
+  
   public $nameCategory;
   public $brand;
 
