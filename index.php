@@ -42,9 +42,9 @@ require_once __DIR__ . '/db.php';
   <div class="row">
     <!-- <h3>Cibo</h3> -->
       <?php foreach($db as $product): ?>
-        <div class="col">
+        <div class="col my-3">
 
-          <div class="card my-3 my-card" style="width: 18rem;">
+          <div class="card my-3 my-card  h-100" style="width: 18rem;">
             <img src="<?php echo $product->image ?>" class="card-imgss-top my-img" alt="...">
               <div class="card-body">
                 <h5 class="card-title">
