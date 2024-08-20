@@ -7,3 +7,13 @@ body {
   margin-top: 40px;
   width:40px ;
 } */
+
+.my-card {
+  height: 750px !important;
+  /* margin-top: 40px;
+  width:40px ; */
+}
+
+.my-img {
+  object-fit: contain;
+}
